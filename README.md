@@ -20,34 +20,34 @@ This repository contains a batch script to block access to specified websites by
 
 # Usage Instructions
 ## Step 1: Download and Run
-### Download the BlockAnimeSites.bat script from this repository.
-### Right-click on the script and select Run as Administrator.
-### Administrator privileges are required to modify the hosts file.
+Download the BlockAnimeSites.bat script from this repository.
+Right-click on the script and select Run as Administrator.
+Administrator privileges are required to modify the hosts file.
 
 # Step 2: Backup Hosts File
-### The script automatically creates a backup of the hosts file at:
-### C:\Windows\System32\drivers\etc\hosts.bak
+The script automatically creates a backup of the hosts file at:
+C:\Windows\System32\drivers\etc\hosts.bak
 
 ## Step 3: Block Websites
-### The script appends the domains of the specified websites to the hosts file, effectively blocking access to them.
+The script appends the domains of the specified websites to the hosts file, effectively blocking access to them.
 
 ## Step 4: Auto-run at Startup
-### The script sets itself to autorun at startup by adding an entry in the Windows Registry. This ensures that the websites remain blocked even after a reboot.
+The script sets itself to autorun at startup by adding an entry in the Windows Registry. This ensures that the websites remain blocked even after a reboot.
 
 # How to Confirm Auto-run Setup
-### Press Win + R, type regedit, and press Enter to open the Registry Editor.
+Press Win + R, type regedit, and press Enter to open the Registry Editor.
 
 ## Navigate to:
-### 1. HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-### 2. Look for an entry named BlockAnimeSites. It should point to the script's file path.
-### 3. Manually Adding the Script to Startup
+1. HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+2. Look for an entry named BlockAnimeSites. It should point to the script's file path.
+3. Manually Adding the Script to Startup
 
 ## If you need to manually add the script to startup:
-### 1. Press Win + R, type shell:startup, and press Enter.
-### 2. Copy the BlockAnimeSites.bat file into the opened folder.
+1. Press Win + R, type shell:startup, and press Enter.
+2. Copy the BlockAnimeSites.bat file into the opened folder.
 
 ## To Revert Changes:
-### If you want to unblock the websites:
+If you want to unblock the websites:
 
 ## Restore the original hosts file:
 1. Copy C:\Windows\System32\drivers\etc\hosts.bak C:\Windows\System32\drivers\etc\hosts
